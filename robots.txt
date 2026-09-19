@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stocki333.github.io/JBD-BMS/sitemap.xml
