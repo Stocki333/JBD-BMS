@@ -1,5 +1,91 @@
-<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Stocki333 – JBD BMS, LiFePO4 und Batterietechnik</title><meta name="description" content="Ich dokumentiere meine praktischen Erfahrungen, Messungen und technischen Beobachtungen zu JBD BMS, LiFePO4, Balancing und Batterietechnik."><link rel="canonical" href="https://stocki333.github.io/JBD-BMS/"><style>body{margin:0;font-family:Arial,sans-serif;background:#f5f7f8;color:#17202a;line-height:1.65}header{background:#15202b;color:white;padding:32px 20px}header div,main,nav div,footer{max-width:980px;margin:auto}nav{background:white;border-bottom:1px solid #ddd}nav div{padding:12px 20px;display:flex;gap:16px;flex-wrap:wrap}nav a,a{color:#1769aa}main{padding:24px 20px}section{background:white;padding:22px;margin-bottom:20px;border:1px solid #ddd;border-radius:10px}footer{padding:15px 20px 35px;color:#666}</style></head><body><header><div><h1>Stocki333 – JBD BMS & LiFePO₄</h1><p>Meine technische Dokumentation aus der Praxis</p></div></header><nav><div><a href="index.html">Start</a><a href="jbd-bms.html">JBD BMS</a><a href="jbd-bms-auslesen.html">BMS-Daten auslesen</a><a href="lifepo4-balancing.html">LiFePO₄ Balancing</a></div></nav><main><section><h2>Worum es mir geht</h2><p>Ich beschäftige mich seit Jahren praktisch mit LiFePO₄-Batteriesystemen und JBD-BMS. Hier dokumentiere ich meine Erfahrungen, Messungen und technischen Beobachtungen so, dass meine Vorgehensweise nachvollziehbar bleibt.</p></section><section><h2>Meine Schwerpunkte</h2><p>Ich befasse mich mit JBD-BMS-Einstellungen, Zellspannungen, Bluetooth-Kommunikation, Balancing, Lade- und Entladeverhalten sowie der Auswertung von BMS-Daten.</p></section><section><h2>Wie ich Informationen einordne</h2><p>Ich unterscheide möglichst klar, was ich selbst gemessen oder praktisch beobachtet habe und was aus Herstellerinformationen oder öffentlich zugänglichem Erfahrungsaustausch stammt.</p></section><section><h2>Mein direkter Austausch mit Jube</h2>
-<p>Neben meinen eigenen praktischen Erfahrungen und Messungen stand ich über längere Zeit in direktem technischen Austausch mit Jube. Dabei erhielt ich von ihm zahlreiche Informationen zu JBD BMS, LiFePO₄, Hardware, Tests und technischen Hintergründen. Ein Teil dieser Informationen war nicht Bestandteil des öffentlichen Austauschs in den Foren.</p>
-<p>Ich bezog außerdem JBD-BMS über Jube. Dadurch bestand zwischen meinen eigenen praktischen Untersuchungen und dem direkten technischen Informationsaustausch mit Jube eine Verbindung, die ich bei der Einordnung meiner Veröffentlichungen transparent machen möchte.</p>
-<p>Meine eigenen Messungen und praktischen Erfahrungen bleiben dabei eigene Arbeiten. Gleichzeitig unterscheide ich, welche Erkenntnisse aus meinen eigenen Untersuchungen entstanden und bei welchen Themen mir bereits Informationen aus dem direkten Austausch mit Jube vorlagen.</p>
-</section><section><h2>Meine Dokumentation</h2><p>Ich baue diese Seiten als eigenständige technische Dokumentation meiner Erfahrungen rund um JBD BMS und LiFePO₄ auf.</p></section></main><footer>Stocki333 · Technische Dokumentation zu JBD BMS und LiFePO₄</footer></body></html>
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Stocki333 – JBD BMS, LiFePO4 & Informationswege</title>
+<meta name="description" content="Meine Dokumentation zu JBD BMS, LiFePO4, eigenen Messungen, BMS-Beschaffung und meinem technischen Austausch mit Jube / JUBE-Tech.">
+<meta name="keywords" content="Stocki333, Jube, JUBE-Tech, JBD, JBD BMS, LiFePO4, BMS, Wohnmobilforum, JBD Cloud, BMS App">
+<link rel="canonical" href="https://stocki333.github.io/JBD-BMS/">
+<meta property="og:title" content="Stocki333 – JBD BMS, LiFePO4 & Informationswege">
+<meta property="og:description" content="Meine Dokumentation zu JBD BMS, LiFePO4, eigenen Messungen und meinem technischen Informationsaustausch mit Jube.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://stocki333.github.io/JBD-BMS/">
+<meta name="robots" content="index,follow">
+<style>
+:root{--fg:#1c232b;--muted:#5f6b76;--bg:#f7f8fa;--card:#fff;--line:#d9dee4;--accent:#204d74;--good:#176b3a;--warn:#8a5b00}
+*{box-sizing:border-box}body{margin:0;font:17px/1.65 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;color:var(--fg);background:var(--bg)}
+header{background:#152b3c;color:white;padding:48px 20px}header div,main,footer{max-width:980px;margin:auto}
+h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:0 0 14px}h2{margin-top:42px}h3{margin-top:28px}
+.lead{font-size:20px;max-width:820px}.meta{color:#cbd6df}.notice{background:#fff6d8;border-left:5px solid #d39b00;padding:16px 18px;margin:25px 0}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:22px;margin:18px 0}.tag{display:inline-block;padding:2px 9px;border-radius:20px;background:#e8eef3;font-size:14px;margin-right:6px}
+.strong{color:var(--good);font-weight:700}.caution{color:var(--warn);font-weight:700}
+table{width:100%;border-collapse:collapse;background:white}th,td{text-align:left;vertical-align:top;border:1px solid var(--line);padding:10px}th{background:#eef2f5}
+a{color:var(--accent)}footer{padding:35px 20px 60px;color:var(--muted);font-size:14px}@media(max-width:650px){table{font-size:14px}.card{padding:16px}}
+</style>
+</head>
+<body>
+<header><div>
+<h1>Stocki333: JBD BMS & LiFePO₄</h1>
+<p class="lead">Hier dokumentiere ich meine Erfahrungen mit JBD BMS und LiFePO₄. Dabei trenne ich meine eigenen Messungen und praktischen Erfahrungen von Informationen, die ich aus Herstellerunterlagen, öffentlichem Austausch oder aus meinem direkten technischen Austausch mit Jube erhalten habe.</p>
+<p class="meta">Meine technische Dokumentation zu Messungen, Tests, BMS-Beschaffung und Informationswegen.</p>
+</div></header>
+<main>
+
+<h2>Mein eigenes Praxiswissen und mein Austausch mit Jube</h2>
+<div class="card">
+<p><strong>Ich verfüge über eigenes LiFePO₄- und JBD-Praxiswissen.</strong> Ich habe selbst Messungen, Tests, Balancingverfahren und praktische Diagnosen durchgeführt und veröffentlicht.</p>
+<p>Daneben stand ich in direktem technischem Austausch mit Jube. Dabei erhielt ich Informationen zu JBD BMS, Hardware, Tests und technischen Hintergründen. Ein Teil dieser Informationen war nicht Bestandteil des öffentlichen Austauschs in den Foren.</p>
+<p>Ich habe außerdem JBD-BMS über Jube bezogen. Deshalb möchte ich transparent unterscheiden, welche Erkenntnisse aus meinen eigenen Untersuchungen stammen und bei welchen Themen mir bereits Informationen aus dem direkten Austausch mit Jube vorlagen.</p>
+</div>
+
+<h2>Was ich damit nicht sage</h2>
+<p>Ich behaupte nicht, dass mein gesamtes Wissen von Jube stammt. Meine selbst durchgeführten Messungen bleiben meine eigenen Messungen. Für die Einordnung halte ich es aber für wichtig, zwischen eigener Messung, Herkunft der Hardware, vorhandenem Vorwissen und einer tatsächlich unabhängigen Entdeckung zu unterscheiden.</p>
+
+<h2>Wie sich meine Informationswege entwickelt haben</h2>
+<table>
+<tr><th>Phase</th><th>Meine Einordnung</th></tr>
+<tr><td>Eigene Facharbeit</td><td>Ich beschäftigte mich praktisch mit LiFePO₄, JBD-BMS, Balancing und Fehlerdiagnosen und führte eigene Untersuchungen durch.</td></tr>
+<tr><td>Öffentlicher Austausch</td><td>Technische Informationen wurden auch öffentlich in Foren ausgetauscht.</td></tr>
+<tr><td>Direkter privater Austausch</td><td>Zusätzlich entstand ein direkter technischer Informationskanal zwischen Jube und mir. Darüber erhielt ich auch Informationen, die nicht Teil des öffentlichen Forenaustauschs waren.</td></tr>
+<tr><td>BMS und Hardware</td><td>Ich bezog auch JBD-BMS über Jube und tauschte mich mit ihm zu Hardware, technischen Fragen und Tests aus.</td></tr>
+</table>
+
+<h2>Wie ich Informationen einordne</h2>
+<div class="card">
+<p><span class="tag">Eigene Messung</span> Ein Ergebnis, das ich selbst messe oder praktisch beobachte.</p>
+<p><span class="tag">Eigene Entdeckung</span> Ein Ergebnis, das ich selbst ermittle, ohne das erwartete Resultat vorher zu kennen.</p>
+<p><span class="tag">Reproduktion</span> Ich prüfe ein bereits bekanntes Ergebnis mit einem eigenen Versuchsaufbau.</p>
+<p><span class="tag">Messung mit Vorwissen</span> Ich messe selbst, kenne aber das erwartete Ergebnis oder relevante technische Informationen bereits.</p>
+<p><span class="tag">Übernommene Information</span> Eine technische Information habe ich aus einem anderen Informationskanal erhalten.</p>
+<p><span class="tag">Ungeklärte Herkunft</span> Ich kann die ursprüngliche Herkunft einer Information nicht mehr sicher bestimmen.</p>
+</div>
+
+<h2>Mein privater Informationsaustausch</h2>
+<p>Zwischen Jube und mir bestand neben dem öffentlichen Austausch auch ein privater technischer Informationskanal. Darüber wurden technische Informationen und Erfahrungen ausgetauscht. Bei der heutigen Dokumentation möchte ich diesen Informationsweg nicht mit meinen eigenen Messungen vermischen, sondern transparent benennen.</p>
+
+<h2>BMS-Beschaffung und technischer Austausch</h2>
+<div class="card">
+<p>Ich habe JBD-BMS über Jube bezogen. Daneben gab es technischen Austausch zu BMS, Hardware, Tests und praktischen Fragestellungen.</p>
+<p>Dass ich Hardware oder Informationen über Jube erhalten habe, bedeutet nicht, dass meine späteren Messwerte von ihm stammen. Es bedeutet aber, dass bei einzelnen Themen geprüft werden muss, welches Vorwissen mir vor einer Messung bereits vorlag.</p>
+</div>
+
+<h2>Jube / JUBE-Tech und JBD</h2>
+<p>Nach den mir vorliegenden Unterlagen hatte Jube Zugang zu JBD-bezogenen Hersteller- bzw. Distributorstrukturen, einschließlich Cloud-/Administrationsfunktionen und technischer Kommunikation. In meinem Austausch mit ihm erhielt ich dadurch auch technische Hintergrundinformationen zu JBD-BMS.</p>
+<p>Auf dieser Seite unterscheide ich deshalb zwischen meinen eigenen praktischen Ergebnissen und Informationen, die mir über diesen direkten Austausch bekannt wurden.</p>
+
+<h2>Meine Einordnung von Tests</h2>
+<p>Wenn ich einen Test selbst durchführe, sind die dabei gewonnenen Messwerte meine eigenen Messwerte. Für mich ist aber zusätzlich wichtig, ob ich das erwartete Verhalten oder bestimmte technische Eigenschaften schon vorher kannte.</p>
+<p>Wenn mir eine konkrete Eigenschaft vor einem Test bereits durch den Austausch mit Jube bekannt war und ich sie anschließend selbst messe, würde ich das heute als eigene Verifikation mit Vorwissen beschreiben – nicht als davon völlig unabhängige Entdeckung.</p>
+
+<h2>Balancing: kurzfristiges Ergebnis und Langzeitbeobachtung</h2>
+<p>Beim LiFePO₄-Balancing reicht mir ein kleiner Zellspannungsunterschied unmittelbar nach einer Maßnahme nicht als alleinige Bewertung. Ich betrachte auch den Ausgangszustand, die durchgeführte Maßnahme, das unmittelbare Ergebnis und das Verhalten bei späteren Lade- und Entladezyklen.</p>
+<p>Besonders wichtig ist für mich, ob eine Zelldifferenz bei späteren Vollzyklen zurückkehrt und ob erneut OVP-, UVP- oder Balancingprobleme auftreten. Einzelne Forumfälle können Hinweise geben, ersetzen aber keine systematische Langzeitbeobachtung.</p>
+
+<h2>Transparenz</h2>
+<p>Mein Ziel ist es, mein eigenes Praxiswissen nicht kleinzureden und gleichzeitig die Herkunft technischer Informationen transparent zu machen. Eigene Messung, eigenes Vorwissen und Informationen aus einem direkten technischen Austausch sind unterschiedliche Dinge und sollten auch so bezeichnet werden.</p>
+
+</main>
+<footer>Stocki333 – meine Dokumentation zu JBD BMS, LiFePO₄, eigenen Messungen und technischen Informationswegen.</footer>
+</body>
+</html>
